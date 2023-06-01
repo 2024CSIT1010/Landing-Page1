@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm House</title>
+</head>
+<style>
+*{padding: 0; margin:0; box-sizing: border-box; font-family: sans-serif;}
+body{
+	display: flex;
+	overflow: hidden;
+}
+.left{
+	z-index: -2;
+	width: 50%;
+	height: 100vh;
+	background: rgb(212, 233, 180);
+}
+.right{
+	z-index: -2;
+	width: 50%;
+	height: 100vh;
+	background: rgb(238, 191, 199);
+}
+#cup{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+nav{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 50px;
+}
+
+#search{
+	margin-right: 50px;
+}
+.h-text{
+	position: absolute;
+	color: rgb(241, 141, 141);
+	top: 20%;
+	left: 15%;
+	letter-spacing: 5px;
+	font-size: 30px;
+
+}
+.t-left{
+	position: absolute;
+	color: white;
+	left: 5%;
+	bottom: 15%;
+	max-width: 400px;
+	padding-left: 50px;
+	border-left: 5px solid orange;
+}
+.t-left p{
+	color: grey;
+	margin-top: 10px;
+}
+
+.t-right{
+	position: absolute;
+	color: white;
+	right:0;
+	bottom: 15%;
+	max-width: 400px;
+	padding-right: 50px;
+}
+.t-right p{
+	color: grey;
+	margin-top: 10px;
+}
+.l-box{
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	bottom: 12%;
+	background: rgba(0,0,0,0.2);
+	z-index: -1;
+}
+.r-box{
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	bottom: 10%;
+	right: 0;
+	background: rgba(0,0,0,0.2);
+	z-index: -1;
+}
+</style>
+<body>
+
+    <header>
+        <nav>
+            <div>
+                <img src="logo.png" width="80">
+            </div>
+            <div>
+                <img src="search.png" width="40" id="search">
+                <img src="menu.png" width="50">
+            </div>
+        </nav>
+    
+    <div class="h-text">
+        <h1>
+            Coffee<br> Bar
+        </h1>
+    </div>
+    
+    <div class="t-left">
+        <h2>Black Lifestyle Lovers</h2>
+                <p>Black is love. Everyone likes the black. black is the sign of darkness and lonelyness and we enjoy..
+    
+                </p>
+    </div>
+    
+    <div class="t-right">
+        <h2>Black Lifestyle Lovers
+            <img src="icon.png" width="25">
+        </h2>
+                <p>Black is love. Everyone likes the black. black is the sign of darkness and lonelyness..
+    
+                </p>
+    </div>
+    
+    
+    
+    </header>
+    <div class="l-box"></div>
+    <div class="r-box"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+    <img src="cup.png" id="cup">
+    
+</body>
+</html>
